@@ -1,9 +1,12 @@
-# TP7 - Course des tortues
-
-GABOREAU Théo
+# TP NOTÉ 2 : COURSE DES TORTUES
 
 DEBEIRE Thomas
 
+HAON Guillaume
+
 PAUMARD Dimitri
 
-HAON Guillaume
+GABOREAU Théo
+
+NB : Un Makefile est opérationnel.
+Pour lancer le code, exffectuer "make && make clean && ./exec"

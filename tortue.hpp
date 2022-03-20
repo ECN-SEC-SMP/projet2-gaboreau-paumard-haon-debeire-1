@@ -1,37 +1,37 @@
 #ifndef __tortue_hpp
 #define __tortue_hpp
 
-#include <string>
 #include <vector>
 #include <iostream>
+#include <string>
+
+#include "macro.hpp"
 
 using namespace std;
 
-class Tortue
+class tortue
 {
 public:
-	Tortue();
-	Tortue(int posX, int posY, string couleur);
+    tortue();
+    tortue(string color);
 
-	int getX();
-	int getY();
-	string getCouleur();
+    string get_color();
+    int get_posCase();
+    int get_posPile();
+    
+    void set_color(string color);
+    void set_posCase(int);
+    void set_posPile(int);
 
-	//friend ostream &operator<<(ostream &out, Tortue &P);
 
-protected:
-	string couleur;
-	int posX;
-	int posY;
+private:
+
+string couleur;
+int posCase;
+int posPile;
+
+
+   
 };
-
-/* ostream &operator<<(ostream &out, Tortue &P)
-{
-
-  out << "Tortue n°" << P.getCouleur() << " :" << endl;
-  out << "Position : (" << P.getX() << " ; " << P.getY() << ")"<< endl; 
-
-  return out;
-} */
 
 #endif

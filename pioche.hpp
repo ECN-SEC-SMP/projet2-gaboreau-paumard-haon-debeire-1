@@ -1,31 +1,45 @@
-#ifndef _PIOCHE_HPP_
-#define _PIOCHE_HPP_
+#ifndef __pioche_hpp
+#define __pioche_hpp
+
+#include <vector>
 #include <iostream>
+#include <string>
+#include <algorithm>
+#include "macro.hpp"
+#include "carte.hpp"
 using namespace std;
 
 
-class pioche{
-private :
+using namespace std;
 
-  list <int> cartes;
-  int nombre_cartes;
-
+class pioche
+{
 public:
+   
+   pioche();
+   carte piocheCarte_rand();
+   void construirePioche();
+   void affiche_pioche();
+   void affiche_taille_pioche();
+   void cleanPioche();
 
-    void pioche_carte_rand();
+/*
+   friend ostream& operator<<(ostream& os, pioche carte& pche)
+   {
+      os<<
+      return os;
+   }
+*/
+private:
 
-    void afficheplateau() const;
+vector<carte> tas;
 
-
-  //constructeur
-    Plateau(int max_x, int max_y);
+   
 };
 
 
 
-
-
-
+    
 
 
 #endif

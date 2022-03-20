@@ -1,24 +1,30 @@
 #include <iostream>
-#include "tortue.hpp"
-
-#include <iostream>
-
+#include <string>
+#include "carte.hpp"
+#include "pioche.hpp"
+#include "plateau.hpp"
+#include "partie.hpp"
+#include "humain.hpp"
 using namespace std;
 
-int main() {
-  //initialiser tortue
-  // initialiser plateau
-  // initialiser joueur
+int main()
+{
 
-  
-	cout << endl << "===== Début du programme =====" << endl << endl;
-  cout << "Hello World!" << endl << endl;
-  // 🐢
+   /*pioche Lapioche;
+   Lapioche.construirePioche();
 
-	Tortue T1;
-	Tortue T2;
-	cout << "Position X de T1 : " << T1.getX() << endl;
-	cout << "Position Y de T1 : " << T1.getY() << endl;
-	cout << "Couleur de T1 : " << T1.getCouleur() << endl;
-  return 0;
-} 
+   humain MonHumain;
+
+   for(int i = 0;i<5;i++)
+   {
+       MonHumain.addCarte(Lapioche.piocheCarte_rand());
+   }
+ 
+    cout<<endl<<MonHumain.update()<<endl;*/
+
+    partie laPartie = partie();
+    laPartie.run();
+    
+
+    return 0;
+}

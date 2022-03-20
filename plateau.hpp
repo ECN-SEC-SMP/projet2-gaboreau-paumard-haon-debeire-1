@@ -1,27 +1,32 @@
-#ifndef _PLATEAU_HPP_
-#define _PLATEAU_HPP_
+#ifndef __plateau_hpp
+#define __plateau_hpp
 
-#include "joueur.hpp"
-
-#include <iostream>
 #include <vector>
+#include <iostream>
+#include <string>
+#include "macro.hpp"
+#include "tortue.hpp"
+#include "carte.hpp"
 
 using namespace std;
 
-class plateau{
-private:
-  int salade;
-  vector<tortue> tableau_tortue;
-
+class plateau
+{
 public:
-  //constructeur
-  plateau();
-  
-  //accesseurs en lecture
 
-  
-  //méthodes
+   plateau(){};
+   plateau(vector<tortue*> tortue);
+  // void addTortue(tortue* tortue);
+   void affichePlateau();
+   bool moveTortue(tortue* LaTortue,int deplacement);
+   void initPlateau(vector<tortue*>);
+   
+   tortue* isWinner();
+   
 
+private:
+   vector<vector<tortue*>> lePlateau;
+   vector<tortue*> listeTortues;
 };
 
 #endif

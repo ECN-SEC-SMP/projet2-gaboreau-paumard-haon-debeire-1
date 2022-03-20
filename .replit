@@ -1,2 +1,2 @@
 language = "cpp"
-run = "make && ./main"
+run = "make && make clean && ./exec"

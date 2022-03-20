@@ -1,31 +1,44 @@
-#include <iostream>
 #include "tortue.hpp"
 
-using namespace std;
 
- // constructeur
-Tortue::Tortue() {}
-
-Tortue::Tortue(int posX, int posY, string couleur)
+tortue::tortue()
 {
-	this->posX = NULL;
-	this->posY = NULL;
-	this->couleur = "";
+    
 }
 
-// Accesseur
-int Tortue::getX()
-{
-	return this->posX;
+tortue::tortue(string color) {
+
+    this->couleur = color;
+
 }
 
-int Tortue::getY()
+string tortue::get_color()
 {
-	return this->posY;
+    return this->couleur;
 }
 
-string Tortue::getCouleur()
+int tortue::get_posCase()
 {
-	return this->couleur;
+    return this->posCase;
 }
 
+int tortue::get_posPile()
+{
+    return this->posPile;
+}
+
+void tortue::set_color(string color)
+{
+    this ->couleur = color;
+}
+
+
+void tortue::set_posCase(int nb_case)
+{
+    this->posCase = nb_case;
+}
+
+void tortue::set_posPile(int nb_pile)
+{
+    this->posCase = nb_pile;
+}
