@@ -1,12 +1,12 @@
 # TP NOTÉ 2 : COURSE DES TORTUES
 
-DEBEIRE Thomas
+- DEBEIRE Thomas
 
-HAON Guillaume
+- HAON Guillaume
 
-PAUMARD Dimitri
+- PAUMARD Dimitri
 
-GABOREAU Théo
+- GABOREAU Théo
 
-NB : Un Makefile est opérationnel.
-Pour lancer le code, exffectuer "make && make clean && ./exec"
+**NB :	Un Makefile est opérationnel.
+			Pour lancer le code, effectuer "make && make clean && ./exec"**
